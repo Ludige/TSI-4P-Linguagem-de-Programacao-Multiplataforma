@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="300.0" maxWidth="198.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="198.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.calculadorafx.PrimaryController">
+   <children>
+      <AnchorPane prefHeight="300.0" prefWidth="196.0">
+         <children>
+            <Button alignment="CENTER" layoutX="15.0" layoutY="118.0" mnemonicParsing="false" onAction="#print" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #9da1a8;" text="1" textAlignment="JUSTIFY" />
+            <Button alignment="CENTER" layoutX="57.0" layoutY="120.0" mnemonicParsing="false" onAction="#print" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #9da1a8;" text="2" />
+            <Button alignment="CENTER" layoutX="102.0" layoutY="120.0" mnemonicParsing="false" onAction="#print" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #9da1a8;" text="3" />
+            <Button alignment="CENTER" layoutX="15.0" layoutY="161.0" mnemonicParsing="false" onAction="#print" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #9da1a8;" text="4" textAlignment="JUSTIFY" />
+            <Button alignment="CENTER" layoutX="57.0" layoutY="163.0" mnemonicParsing="false" onAction="#print" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #9da1a8;" text="5" />
+            <Button alignment="CENTER" layoutX="102.0" layoutY="163.0" mnemonicParsing="false" onAction="#print" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #9da1a8;" text="6" />
+            <Button alignment="CENTER" layoutX="15.0" layoutY="209.0" mnemonicParsing="false" onAction="#print" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #9da1a8;" text="7" textAlignment="JUSTIFY" />
+            <Button alignment="CENTER" layoutX="57.0" layoutY="211.0" mnemonicParsing="false" onAction="#print" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #9da1a8;" text="8" />
+            <Button alignment="CENTER" layoutX="102.0" layoutY="211.0" mnemonicParsing="false" onAction="#print" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #9da1a8;" text="9" />
+            <Button alignment="CENTER" layoutX="57.0" layoutY="257.0" mnemonicParsing="false" onAction="#print" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #9da1a8;" text="0" />
+            <Button alignment="CENTER" layoutX="102.0" layoutY="257.0" mnemonicParsing="false" onAction="#print" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #9da1a8;" text="." />
+            <Button alignment="CENTER" layoutX="148.0" layoutY="257.0" mnemonicParsing="false" onAction="#calcular" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #a1bf9f;" text="=" />
+            <Button alignment="CENTER" layoutX="148.0" layoutY="76.0" mnemonicParsing="false" onAction="#opr" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #cad0db;" text="/" />
+            <Button alignment="CENTER" layoutX="148.0" layoutY="120.0" mnemonicParsing="false" onAction="#opr" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #cad0db;" text="*" />
+            <Button alignment="CENTER" layoutX="148.0" layoutY="163.0" mnemonicParsing="false" onAction="#opr" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #cad0db;" text="-" />
+            <Button alignment="CENTER" layoutX="148.0" layoutY="211.0" mnemonicParsing="false" onAction="#opr" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #cad0db;" text="+" />
+            <Button alignment="CENTER" layoutX="15.0" layoutY="76.0" mnemonicParsing="false" onAction="#limpa" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: #7e7d82;" text="CE" />
+            <Button alignment="CENTER" layoutX="102.0" layoutY="76.0" mnemonicParsing="false" onAction="#limpaTudo" prefHeight="33.0" prefWidth="32.0" style="-fx-background-color: #7e7d82;" text="C" />
+            <Label layoutX="66.0" layoutY="2.0" prefHeight="25.0" prefWidth="64.0" text="Calculadora" />
+            <TextField fx:id="displayTexto" layoutX="12.0" layoutY="40.0" opacity="0.84" prefHeight="25.0" prefWidth="164.0" text="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

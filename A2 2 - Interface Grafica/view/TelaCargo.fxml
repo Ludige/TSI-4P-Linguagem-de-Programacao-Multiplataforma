@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ultrabusinessmegatop.view.TelaCargoController">
+   <children>
+      <Pane layoutX="176.0" layoutY="54.0" prefHeight="332.0" prefWidth="410.0">
+         <children>
+            <Label layoutX="24.0" layoutY="20.0" text="Nome:" />
+            <Label layoutX="24.0" layoutY="70.0" text="Descrição:" />
+            <TextField fx:id="tfNome" layoutX="24.0" layoutY="37.0" prefHeight="25.0" prefWidth="384.0" promptText="Nome do Cargo" />
+            <TextField fx:id="tfDescricao" layoutX="24.0" layoutY="87.0" prefHeight="25.0" prefWidth="384.0" promptText="Descrição do Cargo" />
+            <Button fx:id="btnSalvar" layoutX="247.0" layoutY="293.0" mnemonicParsing="false" onAction="#salvar" prefHeight="25.0" prefWidth="76.0" text="Salvar" />
+            <Button fx:id="btnCancelar" layoutX="332.0" layoutY="293.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="76.0" text="Cancelar" />
+         </children>
+      </Pane>
+      <Label layoutX="278.0" layoutY="14.0" text="Controlador de Cargos" textFill="#23035b">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="10.0" layoutY="11.0" prefHeight="378.0" prefWidth="160.0">
+         <content>
+            <ListView fx:id="lvCargos" onMouseClicked="#selecionar" prefHeight="375.0" prefWidth="158.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
